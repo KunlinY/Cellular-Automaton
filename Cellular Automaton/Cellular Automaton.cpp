@@ -410,7 +410,7 @@ int main()
 	seed = time(NULL);
 	initMap();
 
-	ofstream oo("final.csv");
+	/*ofstream oo("final.csv");
 	oo << "Traffic Count, Self-driving Car Rate, Turning Rate, Time, Total Num, Traffic Flow, Actual Turning Num" << endl;
 	for (; trafficCount < 6500; trafficCount += 500) {
 		for (selfRate = 0; selfRate <= 10; selfRate++) {
@@ -426,13 +426,13 @@ int main()
 				destroyAll();
 			}
 		}
-	}
+	}*/
 
-	/*while (seconds++ < TIME) {
+	while (seconds++ < TIME) {
 		generateCar();
 		move();
 		draw();
-	}*/
+	}
 
 	_getch();
     return 0;
